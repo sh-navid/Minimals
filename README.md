@@ -1,4 +1,4 @@
-# small-projects
+# Small Projects
 ## Python
 
 ## Php
