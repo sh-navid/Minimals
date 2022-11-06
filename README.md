@@ -1,8 +1,3 @@
-# Small Projects
-## Python
-
-## Php
+# Monimal Projects
 - [Simple Dictionary](php/simple-dictionary/README.md)
-
-## Javascript
 - [Recursive Example](javascript/temp/recursive-01.html)
