@@ -4,3 +4,4 @@
 
 ## Python
 - [Tkinter Dictionary](python/tkinter/dictrionary/dict.py)
+- [Tkinter Simple Paint](python/tkinter/simple_paint/paint.py)
