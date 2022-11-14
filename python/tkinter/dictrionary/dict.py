@@ -22,7 +22,11 @@ print(words)
 
 
 def translate():
-    print("hello")
+    try:
+        word = text_box.get()  # Get the text from text_box
+        trans_label.config(text=words[word])
+    except:
+        trans_label.config("")
 
 
 # ---------------------------------------------------------
@@ -47,8 +51,9 @@ button = Button(text="Translate", command=translate)
 button.pack()
 
 # ---------------------------------------------------------
-translation = Label(text="")
-translation.pack()
+# Make a label to show the translation
+trans_label = Label(text="")
+trans_label.pack()
 
 # ---------------------------------------------------------
 win.mainloop()
