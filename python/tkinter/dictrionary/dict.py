@@ -9,7 +9,7 @@ with open(sys.path[0]+"/words.csv", "r")as file:
 print(lines)
 
 # ---------------------------------------------------------
-# Make a cleaner dict (IS LIKE a JSON) from our lines list
+# Make a cleaner dict (IS LIKE a JSON) from our list of lines
 words = {}
 for line in lines:
     line = line.replace("\n", "")
