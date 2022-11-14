@@ -57,4 +57,5 @@ trans_label = Label(text="")
 trans_label.pack()
 
 # ---------------------------------------------------------
+# Show the window of our application
 win.mainloop()
