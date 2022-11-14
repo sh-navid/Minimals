@@ -4,7 +4,7 @@ import sys
 # ---------------------------------------------------------
 # Load words from file
 lines = []
-with open(sys.path[0]+"/words.csv", "r")as file:
+with open(sys.path[0]+"/words.csv", "r") as file:
     lines = file.readlines()
 print(lines)
 
