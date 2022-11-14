@@ -29,7 +29,7 @@ win = Tk()
 win.title("Paint")
 
 
-btn_new = Button(text="New")
+btn_new = Button(text="New",command=lambda: canvas.delete("all"))
 btn_new.grid(row=0, column=0)
 
 
