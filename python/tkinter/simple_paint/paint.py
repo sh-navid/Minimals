@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.colorchooser import askcolor
 
-x, y, color = None, None, "#212121"
+x, y, color, size = None, None, "#212121", 2
 
 
 def mouse_click(e):
@@ -11,13 +11,18 @@ def mouse_click(e):
 
 def mouse_move(e):
     global x, y, c
-    canvas.create_line(x, y, e.x, e.y, width=5, fill=color)
+    canvas.create_line(x, y, e.x, e.y, width=size, fill=color)
     x, y = e.x, e.y
 
 
 def change_color():
     global color
     color = askcolor()[1]
+
+
+def change_width(e):
+    global size
+    size = e
 
 
 win = Tk()
@@ -32,8 +37,8 @@ btn_color = Button(text="Color", command=change_color)
 btn_color.grid(row=0, column=2)
 
 
-btn_size = Scale(orient=HORIZONTAL, from_=2, to=50)
-btn_size.grid(row=0, column=1)
+scale_size = Scale(orient=HORIZONTAL, from_=2, to=50, command=change_width)
+scale_size.grid(row=0, column=1)
 
 
 canvas = Canvas(background="white")
