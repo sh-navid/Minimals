@@ -22,11 +22,12 @@ print(words)
 
 
 def translate():
-    try:
-        word = text_box.get()  # Get the text from text_box
+    word = text_box.get()  # Get the text from text_box like "input.value"
+    word = word.strip()  # This is to clean spaces around the word just like ".trim()"
+    if word in words.keys():  # Check if word exists in our dictionary
         trans_label.config(text=words[word])
-    except:
-        trans_label.config("")
+    else:
+        trans_label.config(text="")
 
 
 # ---------------------------------------------------------
