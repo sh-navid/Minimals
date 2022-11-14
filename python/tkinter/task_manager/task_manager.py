@@ -1,14 +1,20 @@
 from tkinter import *
 
 
-class Tasks:
-    title=""
-    desc=""
+class Task:
+    title = ""
+    desc = ""
 
-    def __init__(self,title,desc):
+    def __init__(self, title, desc):
         pass
 
 
-win=Tk()
+L = [
+    Task("Buy", "A Car"),
+    Task("Clean", "The House")
+]
+
+
+win = Tk()
 
 win.mainloop()
